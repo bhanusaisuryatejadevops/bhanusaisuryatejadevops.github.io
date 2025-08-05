@@ -11,7 +11,7 @@ body {
   margin: auto;
 }
 .hero {
-  background: url('https://images.unsplash.com/photo-1518779578993-ec3579fee39f') center/cover fixed;
+  background: url('https://cdn.pixabay.com/photo/2022/09/19/12/06/technology-7464077_1280.jpg') center/cover fixed;
   color: white;
   padding: 60px 0;
 }
