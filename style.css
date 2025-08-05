@@ -51,7 +51,6 @@ footer {
   padding: 20px 0;
   color: #999;
 }
-
 .profile-img {
   width: 120px;
   height: 120px;
@@ -61,7 +60,15 @@ footer {
   display: block;
   object-fit: cover;
 }
-
+/* Spacing improvements */
+#projects ul li {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+#experience p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
 /* Dark mode styles */
 body.dark {
   background-color: #121212;
@@ -85,7 +92,6 @@ body.dark a {
   cursor: pointer;
   z-index: 1000;
 }
-
 /* Responsive styling */
 @media (max-width: 600px) {
   header h1 {
