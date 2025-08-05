@@ -3,20 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Penumarthi B Sai Surya Teja | DevOps Engineer</title>
+  <title>Penumarthi Bhanu Sai Surya Teja | DevOps Engineer</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <button onclick="toggleDarkMode()" class="dark-mode-toggle">🌙 Toggle Dark Mode</button>
-  <header>
-    <div class="container">
-      <img src="assets/profile.jpg" alt="Surya Teja" class="profile-img"/>
-      <h1>Penumarthi B Sai Surya Teja</h1>
-      <p class="subtitle">DevOps & SRE Engineer | AWS | Kubernetes | CI/CD | Terraform</p>
+  <button onclick="toggleDarkMode()" class="dark-mode-toggle">🌙 Dark Mode</button>
+  <header class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1 class="fade-in">Penumarthi Bhanu Sai Surya Teja</h1>
+        <p class="subtitle fade-in-delay">DevOps & SRE Engineer | AWS | Kubernetes | CI/CD | Terraform</p>
+        <div class="hero-buttons fade-in-delay2">
+          <a href="assets/resume.pdf" download class="btn">📄 Download Resume</a>
+          <a href="#contact" class="btn btn-secondary">📬 Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="assets/profile.jpg" alt="Surya Teja" class="profile-img"/>
+      </div>
     </div>
   </header>
 
-  <section id="about">
+  <section id="about" class="fade-section">
     <div class="container">
       <h2>About Me</h2>
       <p>
@@ -25,92 +33,71 @@
     </div>
   </section>
 
-  <section id="skills">
+  <section id="skills" class="fade-section">
     <div class="container">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>AWS (EC2, S3, EKS, IAM)</li>
-        <li>Jenkins, GitLab CI/CD, ArgoCD</li>
-        <li>Kubernetes, Docker, Helm</li>
-        <li>Ansible, Terraform</li>
-        <li>Linux, Bash, Python</li>
-        <li>Prometheus, Grafana, CloudWatch</li>
-      </ul>
+      <h2>Core Expertise</h2>
+      <div class="skills-grid">
+        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS"/><span>AWS</span></div>
+        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes"/><span>Kubernetes</span></div>
+        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins"/><span>Jenkins</span></div>
+        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"/><span>Docker</span></div>
+        <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" alt="Terraform"/><span>Terraform</span></div>
+        <div class="skill-item"><img src="https://argo-cd.readthedocs.io/en/stable/assets/logo.png" alt="ArgoCD"/><span>ArgoCD</span></div>
+        <div class="skill-item"><img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Prometheus_software_logo.svg" alt="Prometheus"/><span>Prometheus</span></div>
+        <div class="skill-item"><img src="https://grafana.com/static/img/grafana_logo_swirl.svg" alt="Grafana"/><span>Grafana</span></div>
+      </div>
     </div>
   </section>
 
-  <section id="experience">
-    <div class="container">
-      <h2>Experience</h2>
-      <p><strong>InfraCloud Technologies (Dec 2023 – Mar 2025)</strong><br>
-         Worked on the Elsa project – deploying 8+ microservices on EKS with ArgoCD and Jenkins-based CI/CD pipelines.
-      </p>
-      <p><strong>Techies Infotech Pvt Ltd (Nov 2019 – Apr 2023)</strong><br>
-         Handled Macy Online Retail & Healthcare projects involving blue-green deployments and AWS automation.
-      </p>
-    </div>
-  </section>
-
-  <section id="projects">
+  <section id="projects" class="fade-section">
     <div class="container">
       <h2>Projects</h2>
-      <ul>
-        <li><strong>Elsa (InfraCloud):</strong> End-to-end CI/CD setup with Helm & ArgoCD, monitoring using Grafana.</li>
-        <li><strong>Macy Online Store:</strong> Blue-Green deployments on AWS using Jenkins and Kubernetes.</li>
-        <li><strong>Healthcare System:</strong> Infra provisioning using Terraform + Ansible, secure CI/CD pipelines.</li>
-      </ul>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Elsa (InfraCloud)</h3>
+          <p>End-to-end CI/CD setup with Helm & ArgoCD, monitoring using Grafana.</p>
+          <span class="badge">AWS</span><span class="badge">Helm</span><span class="badge">ArgoCD</span>
+        </div>
+        <div class="project-card">
+          <h3>Macy Online Store</h3>
+          <p>Blue-Green deployments on AWS using Jenkins and Kubernetes.</p>
+          <span class="badge">Jenkins</span><span class="badge">Kubernetes</span><span class="badge">AWS</span>
+        </div>
+        <div class="project-card">
+          <h3>Healthcare System</h3>
+          <p>Infra provisioning using Terraform + Ansible, secure CI/CD pipelines.</p>
+          <span class="badge">Terraform</span><span class="badge">Ansible</span><span class="badge">AWS</span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="resume">
-    <div class="container">
-      <h2>Resume</h2>
-      <p>
-        <a href="assets/resume.pdf" download>Download My Resume (PDF)</a>
-      </p>
-    </div>
-  </section>
-
-  <section id="contact">
+  <section id="contact" class="fade-section">
     <div class="container">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:pbsaisuryateja@gmail.com">pbsaisuryateja@gmail.com</a></p>
       <p>GitHub: <a href="https://github.com/bhanusaisuryatejadevops" target="_blank">bhanusaisuryatejadevops</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/penumarthi-b-sai-surya-teja-654ba2134/" target="_blank">yourlinkedin</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourlinkedin" target="_blank">yourlinkedin</a></p>
     </div>
   </section>
 
   <footer>
     <div class="container">
-      <p>© 2025 Penumarthi B Sai Surya Teja. All rights reserved.</p>
+      <p>© 2025 Penumarthi Bhanu Sai Surya Teja. All rights reserved.</p>
+      <p>Last Updated: <span id="lastUpdated"></span></p>
     </div>
   </footer>
 
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const subtitle = document.querySelector(".subtitle");
-      const text = subtitle.textContent;
-      subtitle.textContent = "";
-      let i = 0;
-      function type() {
-        if (i < text.length) {
-          subtitle.textContent += text.charAt(i);
-          i++;
-          setTimeout(type, 60);
-        }
-      }
-      type();
-    });
-
     function toggleDarkMode() {
       document.body.classList.toggle("dark");
-      localStorage.setItem("theme", document.body.classList.contains("dark") ? "dark": "light");
+      localStorage.setItem("theme", document.body.classList.contains("dark") ? "dark" : "light");
     }
-
     window.onload = () => {
       if (localStorage.getItem("theme") === "dark") {
         document.body.classList.add("dark");
       }
+      document.getElementById("lastUpdated").textContent = new Date().toLocaleDateString();
     };
   </script>
 </body>
